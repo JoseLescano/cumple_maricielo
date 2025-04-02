@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  background: #020202;
+  cursor: crosshair;
+}
+
+canvas {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+
+h1, h2 {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Impact, Charcoal, sans-serif";
+  font-size: 5em;
+  font-weight: 800;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+h1 {
+  top: 40%;
+  color: #F4F5F7;
+}
+
+h2 {
+  top: 80%;
+  color: #F4F6F7;
+}
+
+.decoracion {
+  position: absolute;
+  width: 150px; /* Ajusta el tamaño */
+  animation: flotar 3s ease-in-out infinite alternate;
+}
+
+@keyframes flotar {
+  from {
+      transform: translateY(0);
+  }
+  to {
+      transform: translateY(-20px);
+  }
+}
+
+/* Posicionar imágenes de la torta y los globos */
+.torta {
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.globos {
+  top: 10px;
+  right: 10px;
+}
